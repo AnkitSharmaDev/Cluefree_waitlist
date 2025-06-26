@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "proposalchat-f0356",
+    "staging": "cluefree"
+  },
+  "targets": {},
+  "etags": {}
+}

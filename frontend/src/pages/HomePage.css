@@ -1,0 +1,137 @@
+.home-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 7rem;
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    letter-spacing: -1px;
+}
+
+@media (min-width: 600px) {
+    .content h1 {
+        font-size: 3.2rem;
+    }
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #a29bfe, #74b9ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.content h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #b2bec3;
+    margin-top: 0;
+    margin-bottom: 2.2rem;
+}
+
+.green-text {
+    color: #55efc4;
+    font-weight: 500;
+}
+
+.subtitle {
+    color: #b2bec3;
+    margin-bottom: 2.5rem;
+    font-size: 1.05rem;
+}
+
+.footer-notes {
+    margin-top: 2.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    color: #636e72;
+    font-size: 0.98rem;
+    flex-direction: row !important;
+}
+
+.footer-notes p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.green-dot, .blue-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.green-dot {
+    background-color: #55efc4;
+}
+
+.blue-dot {
+    background-color: #74b9ff;
+}
+
+.cluely-link {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: opacity 0.15s;
+}
+
+.cluely-link:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+  .home-page-container {
+    padding-top: 4.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .content h1 {
+    font-size: 2rem;
+    margin-bottom: 0.7rem;
+  }
+  .content h2 {
+    font-size: 0.98rem;
+    margin-bottom: 1rem;
+  }
+  .subtitle {
+    font-size: 0.95rem;
+  }
+  .footer-notes {
+    flex-direction: column;
+    gap: 0.7rem;
+    font-size: 0.92rem;
+    margin-top: 1.2rem;
+  }
+}
+
+.see-features-btn {
+  margin: 2.2rem auto 0 auto;
+  display: block;
+  background: linear-gradient(90deg, #a29bfe, #74b9ff);
+  color: #fff;
+  border: none;
+  padding: 0.9rem 2.2rem;
+  border-radius: 20px;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 12px 0 rgba(80,80,255,0.08);
+  transition: background 0.2s, transform 0.2s;
+}
+.see-features-btn:hover {
+  background: linear-gradient(90deg, #74b9ff, #a29bfe);
+  transform: translateY(-2px) scale(1.04);
+} 

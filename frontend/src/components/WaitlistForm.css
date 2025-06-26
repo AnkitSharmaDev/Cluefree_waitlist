@@ -1,0 +1,98 @@
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.waitlist-form-container {
+    animation: fade-in 0.5s ease-out forwards;
+}
+
+.waitlist-form-container form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    background: rgba(30, 30, 50, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 2px 16px 0 rgba(80,80,255,0.04);
+    padding: 0.2rem;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.waitlist-form-container input {
+    font-size: 1rem;
+    padding: 1.1rem 1.2rem;
+    border: none;
+    border-radius: 12px 0 0 12px;
+    background-color: #181824;
+    color: white;
+    width: 260px;
+    outline: none;
+}
+
+.waitlist-form-container button {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 1.1rem 2rem;
+    border: none;
+    border-radius: 0 12px 12px 0;
+    background: linear-gradient(90deg, #a29bfe, #74b9ff);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.waitlist-form-container button:hover {
+    background: linear-gradient(90deg, #74b9ff, #a29bfe);
+    transform: scale(1.03);
+}
+
+.waitlist-form-container button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.success-message, .error-message {
+    margin-top: 1.2rem;
+    font-size: 1rem;
+    animation: fade-in 0.3s ease-out forwards;
+}
+
+.success-message {
+    color: #55efc4;
+}
+
+.error-message {
+    color: #ff7675;
+}
+
+@media (max-width: 600px) {
+  .waitlist-form-container form {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0.2rem;
+    max-width: 100%;
+  }
+  .waitlist-form-container input,
+  .waitlist-form-container button {
+    width: 90vw;
+    max-width: 320px;
+    border-radius: 10px;
+    font-size: 0.98rem;
+    margin-bottom: 0.5rem;
+    padding: 0.8rem 0.7rem;
+    min-width: 0;
+  }
+  .waitlist-form-container button {
+    margin-bottom: 0;
+  }
+} 

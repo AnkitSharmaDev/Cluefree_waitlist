@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+body, .App {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: radial-gradient(ellipse at 60% 20%, #232347 0%, #181824 80%, #10101a 100%);
+  color: #fff;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Simple particle effect */
+.App::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  top: 10%;
+  left: 15%;
+  box-shadow: 
+    10vw 20vh 2px white,
+    -15vw 30vh 3px white,
+    20vw -10vh 2px white,
+    -5vw 50vh 2px white,
+    30vw 70vh 3px white,
+    -20vw 80vh 2px white,
+    40vw 10vh 2px white,
+    -30vw -20vh 3px white,
+    50vw 50vh 2px white,
+    -40vw 60vh 3px white;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 0;
+  }
+} 
